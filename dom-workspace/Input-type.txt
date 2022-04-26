@@ -1,0 +1,31 @@
+Input Type
+
+Radio
+<label>
+ SIM
+ <input type = "radio" name= "eh-maior">
+</label>
+
+<label>
+ SIM
+ <input type = "radio" name= "eh-maior">
+</label>
+
+
+<input type = "checked"> -> checar vários elementos
+
+<select>
+   <option value = "option-1"></option> |
+   <option value = "option-2"></option> | 
+   <option value = "option-3"></option> | --> selelecionar um opção
+   <option value = "option-4"></option> |     em uma lista de opçoes
+   <option value = "option-5"></option> |
+</select>
+
+<form action ="https://www.google.com/search"> action pra onde vai enviar os dados do formulário
+</form>
+
+Prevent Default
+
+event.preventDefault(); -> parar o recarregamento da página apos o action
+

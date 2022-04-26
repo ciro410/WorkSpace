@@ -1,0 +1,84 @@
+body{
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.counts,.fruit-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.fruit-list ul{
+    align-self: flex-start;
+}
+
+input {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.acerto{
+    border: 3px solid green;
+}
+
+.erro{
+    border: 3px solid red;
+}
+
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe button{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: slategrey;
+    color: #ffff;
+    padding: 10px;
+
+}
+
+.modal span{
+    margin-bottom: 8px;
+}
+
+.btns button {
+    background-color:aliceblue;
+    color: black
+}
+
+.escondido{
+    display: none;
+}
+
+.btn {
+    background-color: red;
+    color: #ffff;
+}
+
+.inscrito{
+    background-color: grey;
+    color: #ffff;
+}

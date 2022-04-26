@@ -1,0 +1,129 @@
+Aula de Dom
+
+EVENTOS
+
+Importando scripts js
+ <script src = "script.js defer"></script> -  atributo "defer" - para executar o script dps que o html redenrizar.
+
+Eventos de teclas
+
+onkeydown - Acabou de apertar
+onkeyup - Apertar e segurar um tecla e soltar
+onkeypress -  aperto e soltou 
+
+
+onkeydown = "nomeDaFunção(event)" ---- no javascript nomeDaFunção(event)
+
+event = objeto contendo todos atributos que aconteceram no evento.
+
+event.code - vai ser aliteralmente a tecla que o usuário apertou.
+event.key - vai ser o conteúdo gerado das teclas.
+
+event.target -> agente do evento
+
+Exemplo das frutas substituir const input = document.querySelector('input') por simplesmente event.target
+
+
+
+Position 
+Static : Não possui, left , right, top bottom nem z index
+pertence ao document-flow.
+
+Relative: Possui, left , right, top bottom e z index pertence ao document flow.
+é posicionado em relação ao espaço alocado, é usado para ser referência
+dos elementos com position absolute.
+
+Absolute: Possui, left , right, top bottom e z index não pertence aodocumento flow, "está acima da pagina"
+ele é posicionado ao parente mais próximo que tem position com valor diferente de static.
+
+Fixed: Possui, left , right, top bottom e z index não pertence aodocumento flow, "está acima da pagina"
+ele é posicionado em relação ao body (por conta disso, o elemento estarpa fixado na viewport.
+Criação de backdrops,fundos sobre a tela, modal)
+
+Stcky: Possui, left , right, top bottom e z index pertence aodocumento flow, "está acima da pagina",
+híbrido entre o relative e o fixed.
+
+Propagação de eventos
+<a target="_blank"><img></a> -> ao clicar abrir link em um  nova guia.
+
+event.stopPropagation();
+para propagação de evento em um item.
+
+
+Requisições e Assincronismo.
+
+JSON - tipo de dados
+fetch - fazer requisições
+assincronismo;
+
+
+fetch('https://viacep.com.br/ws/01001000/json/'); fazer a requisição de determinada url;
+
+const promiseResposta = fetch('https://viacep.com.br/ws/' + cepInput.value + '/json/'); promiseResposta recebe uma promessa, pois está aguardando a resposta do servidor
+
+promiseResposta.then((resposta) =>{
+      resposta-> apos esperar a requisição e recebe o dado, PORÉM recebe os dados em bytes, necessário transformar em json;
+      const promiseBody = resposta.json();
+      
+	promiseBody.then((body) => {
+	  	console.log(body) ---> Agr sim tem o objeto json requisitado da url;
+		
+		popular os inputs com os dados requeridos
+		
+		ufInput.value = body.uf;
+		cidadeInput.value = body.localidade;
+		ruaInput.value = body.logradouro;
+	});
+
+});
+
+
+
+
+const todosElementos = document.querySelectorAll("elementos");
+
+todosElementos.forEach( (elemento,index) => {
+	essa função enumera todos os itens que foram selcionados pelo document.querySelectorAll.
+})
+
+
+document.createElement("div") criar elementos no HTML.
+
+const div = document.createElement('div')
+div.textContent = 'Olá Mundo';
+div.classList.add('mundo')
+
+const body = document.querySelector(body)
+
+body.append(div) - Adciocionar elementos em outros elementos.
+
+
+div.remove() --> apaga o elemento criado
+
+
+criando variavel css no pai
+
+
+--nome-da-variavel: red;
+
+color: var(--nome-da-variavel);
+
+body.style.setProperty('--nome-da-variavel', '#000');
+ getPropertyValue(--nome-da-variavel) pegar valor da variárvel
+
+
+localStorage.steItem('tema', 'claro')
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="fruit-list.js" defer></script>
+    <script src="counts.js" defer></script>
+    <script src="subscribe.js" defer></script>
+    <title>Eventos Workspace</title>
+</head>
+<body>
+    <div class="fruit-list">
+        <h2>Lista de Frutas</h2>
+        <input type="text" >
+        <ul>
+            <li>Uva</li>
+            <li>Maça</li>
+            <li>Banana</li>
+            <li>Melão</li>
+            <li>Melancia</li>
+            <li>Caju</li>
+            <li>Goiaba</li>
+        </ul>
+    </div>
+
+    <div class="counts">
+        <h2>Operações Fundamentais</h2>
+        <label for="quiz-1">2+2 </label>
+        <input id="quiz-1" type="text" data-resposta="4">
+        <label for="quiz-2">8-4 </label>
+        <input id="quiz-2" type="text" data-resposta="4">
+        <label for="quiz-3">3*3 </label>
+        <input id="quiz-3" type="text" data-resposta="9">
+        <label for="quiz-4">10/5 </label>
+        <input id="quiz-4" type="text" data-resposta="2">
+    </div>
+
+    <div class="subscribe">
+        <div class="modal escondido">
+            <span>Certeza?</span>
+            <div class="btns">
+                <button class="cancelar">Não</button>
+                <button class="confirmar">Sim</button>
+            </div>
+        </div>
+        <button class="btn">INSCREVER-SE</button>
+    </div>
+</body>
+</html>

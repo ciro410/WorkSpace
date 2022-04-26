@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.container{
+    margin-bottom: 200px;
+}
+
+.container-pets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.pet-img{
+    display: flex;
+}
+
+.quadro {
+    border:  1px solid #000;
+    padding: 12px;
+}
+
+.quadro-1{
+    position: relative;
+    left: 50px;
+}
+
+.gato{
+    position: relative;
+    z-index: 1;
+}
+
+.quadro-2{
+    position:relative;
+    bottom: 50px
+}

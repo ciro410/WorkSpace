@@ -1,0 +1,15 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    margin-top: 10px;
+}
+
+.red{
+    border: 1px solid red;
+}
